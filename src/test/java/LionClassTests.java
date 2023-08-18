@@ -31,9 +31,6 @@ import org.mockito.MockitoAnnotations;
                     {"Самка",false,1,null},
                     {"Самец",true,0,"test"},
                     {"Самка",false,100,"test"},
-//                    {"Самец",false,10,"Test"}, // не уверен, что имеет смысл делать проверки которые заведомо будут падать
-//                    {"Самец",false,1,null},
-//                    {"Самка",false,10,"Test"}
             };
         }
 

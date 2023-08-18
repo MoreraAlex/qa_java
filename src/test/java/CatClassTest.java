@@ -7,7 +7,7 @@ import org.mockito.Mockito;
 import java.util.List;
 
 public class CatClassTest {
-    @Test //сравниваем звук с ожидаемым
+    @Test
     public void getSound() {
         Feline predatorCat = Mockito.mock(Feline.class);
         Cat cat = new Cat(predatorCat);
@@ -16,7 +16,7 @@ public class CatClassTest {
         Assert.assertEquals("Текст не соответствует ожидаемому",expected,actual);
     }
 
-    @Test //сравниваем список пищи которую ест кот-хищник
+    @Test
     public void getFood() throws Exception{
         Feline predatorCat = Mockito.mock(Feline.class);
         Cat cat = new Cat(predatorCat);
