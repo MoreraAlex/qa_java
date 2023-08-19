@@ -10,14 +10,14 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
     @RunWith(Parameterized.class)
-    public class LionClassTests {
+    public class LionClassTest {
 
         private String sex;
         private boolean EXPECTED_DOES_HAVE_MANE;
         private int KITTENS_COUNT;
         private String sexThrow;
 
-        public LionClassTests(String sex, boolean expectedDoesHaveMane, int kittensCount, String sexThrow) {
+        public LionClassTest(String sex, boolean expectedDoesHaveMane, int kittensCount, String sexThrow) {
             this.sex = sex;
             this.EXPECTED_DOES_HAVE_MANE = expectedDoesHaveMane;
             this.KITTENS_COUNT = kittensCount;
