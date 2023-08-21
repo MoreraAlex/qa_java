@@ -6,7 +6,7 @@ import java.util.List;
 
 public class AnimalClassTest {
 
-    @Test //проверяем, что при передаче аргумента "травоядное" мы получим правильный список
+    @Test
     public void getFood() throws Exception {
         Animal animal = new Animal();
         List<String> actual = animal.getFood("Травоядное");
@@ -14,7 +14,7 @@ public class AnimalClassTest {
         Assert.assertEquals("Вернувшийся список еды не соответствует ожидаемому", excepted,actual);
     }
 
-    @Test //проверка, что при передаче некорректного типа животного, получаем корректный текст ошибки
+    @Test
     public void getFoodCheckException(){
         Exception exceptionText = null;
         try {
@@ -28,7 +28,7 @@ public class AnimalClassTest {
         Assert.assertEquals("Некорректный текст ошибки", excepted, actual);
     }
 
-    @Test //Проверяем текст метода на валидность
+    @Test
     public void getFamily() {
         Animal animal = new Animal();
         String actual = animal.getFamily();

@@ -10,14 +10,14 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
     @RunWith(Parameterized.class)
-    public class LionClassTests {
+    public class LionClassTest {
 
         private String sex;
         private boolean EXPECTED_DOES_HAVE_MANE;
         private int KITTENS_COUNT;
         private String sexThrow;
 
-        public LionClassTests(String sex, boolean expectedDoesHaveMane, int kittensCount, String sexThrow) {
+        public LionClassTest(String sex, boolean expectedDoesHaveMane, int kittensCount, String sexThrow) {
             this.sex = sex;
             this.EXPECTED_DOES_HAVE_MANE = expectedDoesHaveMane;
             this.KITTENS_COUNT = kittensCount;
@@ -31,9 +31,6 @@ import org.mockito.MockitoAnnotations;
                     {"Самка",false,1,null},
                     {"Самец",true,0,"test"},
                     {"Самка",false,100,"test"},
-//                    {"Самец",false,10,"Test"}, // не уверен, что имеет смысл делать проверки которые заведомо будут падать
-//                    {"Самец",false,1,null},
-//                    {"Самка",false,10,"Test"}
             };
         }
 

@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.List;
 
 public class FelineClassTest {
-    @Test //сравниваем список пищи которую eдят кошачьи
+    @Test
     public void eatMeat() throws Exception{
         Feline feline = new Feline();
         List<String> actual = feline.eatMeat();
@@ -13,7 +13,7 @@ public class FelineClassTest {
         Assert.assertEquals("Cписок не соответствует ожидаемому",expected,actual);
     }
 
-    @Test //сравниваем название рода, ожидаем "Кошачьи"
+    @Test
     public void getFamily() throws Exception{
         Feline feline = new Feline();
         String actual = feline.getFamily();
